@@ -1,0 +1,126 @@
+.show-detail-size {
+    p {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        // font-weight: 500;
+    }
+    .detail-img-vacity,
+    .detail-img {
+        margin: 0 3rem;
+        margin-bottom: 2.5rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .sub-use-size {
+        p {
+            margin-bottom: 0.3rem;
+        }
+    }
+}
+
+.form-cmt {
+    margin: 2.5rem 0;
+
+    .form-control {
+        font-size: 1.4rem;
+        box-shadow: 0 0 0 1px var(--border-color);
+        transition: all 0.2s ease-out;
+        background-color: var(--nomal-color);
+        color: var(--style-color);
+        border: none;
+        border-radius: 4px;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.8rem;
+        word-break: normal;
+        &:focus {
+            outline: 2px solid #338dbc;
+        }
+    }
+
+    .content-cmt {
+        margin-top: 1rem;
+        min-height: 100px;
+    }
+    span {
+        font-size: 1.3rem;
+    }
+
+    .sub-form-cmt {
+        margin-top: 2rem;
+        display: inline-block;
+
+        .sub-form {
+            display: block;
+            border-radius: 4px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            padding: 1em 2em;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            position: relative;
+            background: var(--style-color);
+            color: var(--nomal-color);
+            border: 1px solid transparent;
+
+            &:hover {
+                filter: brightness(1.2);
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .show-detail {
+        font-size: 1.4rem;
+        font-weight: 700;
+        cursor: pointer;
+        opacity: 0.6;
+        margin-top: 2rem;
+        &:hover {
+            opacity: 1;
+        }
+        .show-box {
+            transition: all 0.3s linear;
+        }
+        &:hover .show-box {
+            transform: translateX(0.8rem);
+        }
+    }
+    .contai-cmt {
+        margin: 2rem 0;
+        .cmt-box {
+            margin-bottom: 1rem;
+        }
+        h4 {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+        .sent-cmt {
+            cursor: pointer;
+            color: var(--input-radio);
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+    }
+
+    .warning {
+        color: var(--input-radio);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 56.7rem) {
+    .form-group {
+        margin: 1rem 0;
+    }
+}

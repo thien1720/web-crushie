@@ -1,0 +1,190 @@
+.footer {
+    margin-top: 5rem;
+}
+.footer-content {
+    h4 {
+        font-weight: 700;
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .footer-logo {
+        img {
+            width: 12rem;
+        }
+    }
+    .footer-contact {
+        ul {
+            padding: 0;
+            list-style-type: none;
+            li {
+                display: flex;
+                align-items: center;
+                margin: 1.5rem 0;
+                .footer-icon {
+                    font-size: 20px;
+                    margin-right: 2rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.footer-support {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+            padding: 0.5rem 0;
+            a {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+.footer-page {
+    overflow: hidden;
+    position: relative;
+
+    .style-page {
+        img {
+            height: 130px;
+            width: 100%;
+            image-rendering: pixelated;
+            object-fit: cover;
+        }
+    }
+
+    .name-page {
+        bottom: 40px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        padding: 1rem;
+        display: flex;
+
+        .bgr-page {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        .foat-iteam-img {
+            margin-right: 1rem;
+            img {
+                max-width: 50px;
+                box-shadow: 0 1px 6px rgb(0 0 0 / 50%);
+            }
+        }
+
+        .page-title {
+            p {
+                color: var(--nomal-color);
+                font-size: 1.8rem;
+                text-shadow: 0 2px 4px rgb(0 0 0 / 90%);
+            }
+            .sub-page {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .name-page-2 {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        .to-face {
+            background-color: var(--border-color);
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            border-radius: 0.2rem;
+            font-size: 1.2rem;
+            color: var(--sale-coin);
+            padding: 0.3rem 1.3rem;
+            margin: 1rem;
+            opacity: 0.7;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.new-letter-socials {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+
+    .socials-box {
+        padding: 0.5rem 0;
+        margin: 0 0.5rem;
+        color: var(--sale-coin);
+        border: 1px solid #888;
+        border-radius: 50%;
+        font-size: 18px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .socials-box.facebook:hover {
+        background-color: #007bff;
+        border: 1px solid #007bff;
+    }
+    .socials-box.twitter:hover {
+        background-color: #34b3f7;
+        border: 1px solid #34b3f7;
+    }
+    .socials-box.printer:hover {
+        background-color: #c51f26;
+        border: 1px solid #c51f26;
+    }
+    .socials-box.intargram:hover {
+        background-color: #feda75;
+        border: 1px solid #feda75;
+    }
+    .socials-box.youtube:hover {
+        background-color: #f70000;
+        border: 1px solid #f70000;
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color);
+    margin: 1rem 0;
+
+    .paying {
+        display: flex;
+        align-items: center;
+        margin: 0 2rem;
+        .iteam-paying {
+            margin: 0.5rem;
+        }
+        img {
+            width: auto;
+            // height: 100%;
+            cursor: pointer;
+        }
+    }
+}

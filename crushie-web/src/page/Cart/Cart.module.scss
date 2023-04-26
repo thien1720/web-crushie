@@ -1,0 +1,160 @@
+.page-cart{
+    margin-top: var(--header-height-iteam);
+
+}
+
+.cart-no-iteam,
+.cart-page-detail,
+.group-cart{
+    border-bottom: 1px solid var(--border-input);
+    background-color: var(--nomal-color);
+    padding: 1rem 0;
+}
+
+.cart-no-iteam{
+    text-align: center;
+    min-height: 10rem;
+    color: var(--input-radio);
+}
+.show-cart{
+    display: flex;
+    justify-content:space-around;
+    .iteam-img{
+        width: 100px;
+        img{
+            width: 100%;
+            height:auto;
+        }
+    }
+
+    .detail-iteam{
+        h3{
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .option-color-size{
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .remove-iteam{
+            font-size: 1rem;
+            margin-top: 1rem;
+            opacity: 0.8;
+            cursor: pointer;
+            &:hover{
+                opacity: 1
+            }
+        }
+    }
+
+    .total-coin{
+        .coin{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--sale-iteam);
+        }
+        .sale-coin{
+            font-size: 1.4rem;
+            text-decoration: line-through;
+            color: var(--sale-coin);
+        }
+    }
+
+    .quantity{
+         display:flex;
+         .total-quantity{
+            border: 1px solid var(--border-input);
+            border-left: none;
+            border-right: none;
+            box-shadow: none;
+            outline: 0;
+            width: 55px;
+            height: 3.5rem;
+            line-height: 3.5rem;
+            text-align: center;
+         }
+         .btn-incre{
+             width:35px ;
+             height: 35px;
+             background-color: var(--nomal-color);
+             border:1px solid var(--border-input);
+         }
+    }
+
+}
+
+.sum-cart-total{
+    padding:1rem;
+    
+
+    .cart-info-monney{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+    }
+
+   
+    h3{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .provisionnal{
+        border-bottom: 1px solid var(--style-color);
+        margin-bottom: 1rem;
+
+        .shiping{
+            opacity: 0.8;
+        }
+    }
+
+    .sub-total-coin{
+        p{
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .monney-total{
+            font-size:1.8rem;
+            font-weight: 600
+        }
+    }
+
+    .btn-order{
+        margin-top: 1rem;
+        width: 100%;
+        a{
+            display: block;
+            background-color:var(--style-color);
+            color: var(--nomal-color);
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.service-cart{
+    margin-top: 2rem;
+
+    .next-page-shops{
+        a{
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            background-color: var(--nomal-color);
+            border: 1px solid var(--style-color);
+            &:hover{
+                background-color: var(--style-color);
+                color: var(--nomal-color);
+                opacity: 0.8;
+            }
+        }
+    }
+}

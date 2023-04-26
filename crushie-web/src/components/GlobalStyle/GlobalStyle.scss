@@ -1,0 +1,77 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+:root {
+    --sale-iteam: #ff3c58;
+    --style-color: #000000;
+    --sale-coin: #bbbbbb;
+    --border-color: #ced4da;
+    --nomal-color: #fff;
+    --border-input: #ced4da;
+    --policy-item: #fafafa;
+    --color-name-input: #495057;
+    --header-height-iteam: 150px;
+    --height-page-info: 100px;
+    --brand-color: #212529;
+    --option-size: #fed900;
+    --input-radio: #338dbc;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+    // background-image: url('../../../public/eternity/background-page.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    p {
+        margin: 0;
+    }
+    a {
+        color: var(--style-color);
+        text-decoration: none;
+        &:hover {
+            color: var(--style-color);
+        }
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pagination {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-top: 4rem !important;
+}
+.pagination {
+    .page-num {
+        padding: 1rem;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: var(--style-color);
+        color: var(--nomal-color);
+        margin: 0 0.2rem;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .active {
+        background-color: var(--nomal-color);
+        color: var(--style-color);
+    }
+}
+
+@media (max-width: 567px) {
+    :root {
+        --header-height-iteam: 110px;
+    }
+}

@@ -1,0 +1,32 @@
+.color-grid{
+    margin: 0 3px 6px 3px;
+    outline: 0;
+}
+.style-color{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+
+}
+
+.border{
+    border: 1px solid var(--style-color);
+}
+
+.trắng{
+    background-color: #FFF;
+}
+.nâu{
+    background-color: #570807;
+}
+.kem{
+    background-color: #e9d0a7;
+}
+.đen{
+    background-color: var(--style-color)
+}
+.xanh{
+    background-color: 	#006400;
+}

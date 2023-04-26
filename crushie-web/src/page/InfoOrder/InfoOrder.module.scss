@@ -1,0 +1,169 @@
+.info-main {
+    margin-top: var(--height-page-info);
+
+    .popup {
+        position: fixed;
+        left: 50%;
+        z-index: 999999;
+        transform: translateX(-50%);
+        background-color: var(--nomal-color);
+        text-align: center;
+        padding: 2rem;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        border: 3px solid var(--input-radio);
+        border-radius: .4rem;
+        span {
+            color: var(--input-radio);
+        }
+        p {
+            font-size: 1.4rem;
+        }
+
+        button {
+            width: auto;
+            font-size: 1.4rem;
+            margin-left: 0.9em;
+            white-space: nowrap;
+            border-radius: 4px;
+            font-weight: 500;
+            padding: 0.6em 1.7em;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid transparent;
+            background-color: var(--input-radio);
+            color: var(--nomal-color);
+            margin-top: 1rem;
+            &:hover{
+                filter:brightness(1.2)
+            }
+        }
+    }
+    h3 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .page-info-cart {
+        display: flex;
+        font-size: 1.4rem;
+        a {
+            margin-right: 1rem;
+        }
+        p {
+            opacity: 0.8;
+        }
+        ::after {
+            display: inline-block;
+            padding-right: 0.5rem;
+            color: var(--color-name-input);
+            content: '/';
+        }
+    }
+}
+
+.show-result-item {
+    background-color: var(--nomal-color);
+    padding: 2rem 0;
+    width: 100%;
+
+    .cart-item {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-input);
+        margin: 0 1rem;
+
+        img {
+            width: 6rem;
+            height: auto;
+        }
+        .detail {
+            flex: 1;
+            margin: 0 1rem;
+            h5 {
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+        }
+
+        .result-item-coin {
+            font-size: 1.4rem;
+        }
+    }
+
+    .code-flase {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+        input {
+            font-size: 1.4rem;
+            box-shadow: 0 0 0 1px var(--border-color);
+            transition: all 0.2s ease-out;
+            background-color: var(--nomal-color);
+            color: var(--style-color);
+            border: none;
+            border-radius: 4px;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0.8rem;
+            word-break: normal;
+            &:focus {
+                outline: 2px solid #338dbc;
+            }
+        }
+
+        button {
+            width: auto;
+            font-size: 1.4rem;
+            margin-left: 0.9em;
+            white-space: nowrap;
+            border-radius: 4px;
+            font-weight: 500;
+            padding: 0.6em 1.7em;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid transparent;
+            background-color: var(--input-radio);
+            color: var(--nomal-color);
+
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+    }
+
+    .total-sub-coin {
+        .select-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+            font-size: 1.4rem;
+
+            h3 {
+                font-size: 1.8rem;
+            }
+
+            .sale-result {
+                color: var(--input-radio);
+                font-weight: 500;
+            }
+        }
+
+        .result-sum-iteam {
+            margin: 2rem 1rem;
+        }
+    }
+}
+
+.no-iteam{
+    font-size:1.6rem;
+    font-weight: 600;
+    margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .style-reverce {
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,189 @@
+.form-info-use {
+    margin-bottom: 10rem;
+    .form-use-select {
+        margin-top: 1.5rem;
+
+        .head-form {
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+    }
+    .mar-input {
+        margin: 1rem 0;
+    }
+    .slec-input-name,
+    .slec-input-email,
+    .slec-input-number,
+    .slec-input-address {
+        font-size: 1.4rem;
+        box-shadow: 0 0 0 1px var(--border-color);
+        transition: all 0.2s ease-out;
+        background-color: var(--nomal-color);
+        color: var(--style-color);
+        border: none;
+        border-radius: 4px;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.8rem;
+        word-break: normal;
+        &:focus {
+            outline: 2px solid #338dbc;
+        }
+    }
+
+    .info-email-number {
+        display: flex;
+
+        .email {
+            flex: 1;
+            margin-right: 2rem;
+        }
+    }
+
+    .select-address {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem;
+
+        select {
+            font-size: 1.4rem;
+            box-shadow: 0 0 0 1px var(--border-color);
+            transition: all 0.2s ease-out;
+            background-color: var(--nomal-color);
+            color: var(--style-color);
+            border: none;
+            border-radius: 4px;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0.8rem;
+            word-break: normal;
+            &:focus {
+                outline: 2px solid var(--input-radio);
+            }
+        }
+    }
+
+    .shiping-item,
+    .option-pay {
+        box-shadow: 0 0 0 1px #d9d9d9;
+        border: 1px solid var(--border-color);
+        margin: 1rem 0;
+        padding: 2rem;
+    }
+    label {
+        font-size: 1.4rem;
+    }
+
+    .sub-form {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        .back-to-cart {
+            display: flex;
+            align-items: center;
+            .icon-cart,
+            a {
+                color: var(--input-radio);
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+
+            .icon-cart {
+                font-size: 2.8rem;
+                transition: all 0.2s ease-in;
+            }
+
+            &:hover .icon-cart {
+                transform: translateX(-0.5rem);
+            }
+        }
+
+        .hand-sub {
+            display: inline-block;
+            border-radius: 4px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding: 1.4em 1.7em;
+            box-sizing: border-box;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+            position: relative;
+            background: var(--input-radio);
+            color: var(--nomal-color);
+            border: 1px solid transparent;
+
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+    }
+}
+
+.form-ship {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    label {
+        display: flex;
+        cursor: pointer;
+        font-weight: 500;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0.375em;
+    }
+
+    input {
+        position: absolute;
+        left: -9999px;
+        &:checked + span {
+            color: var(--input-radio);
+            &:before {
+                box-shadow: inset 0 0 0 0.4375em var(--input-radio);
+            }
+        }
+    }
+    span {
+        display: flex;
+        align-items: center;
+        padding: 0.375em 0.75em 0.375em 0.375em;
+        border-radius: 99em; // or something higher...
+        transition: 0.25s ease;
+        &:hover {
+        }
+        &:before {
+            display: flex;
+            flex-shrink: 0;
+            content: '';
+            background-color: var(--nomal-color);
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            margin-right: 0.375em;
+            transition: 0.25s ease;
+            box-shadow: inset 0 0 0 0.125em var(--input-radio);
+        }
+    }
+}
+
+.warning {
+    color: var(--input-radio);
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+    .form-info-use {
+        .select-address {
+            display: block;
+            margin: 0;
+            select{
+                margin: 1rem;
+            }
+        }
+    }
+}
