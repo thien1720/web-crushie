@@ -102,7 +102,7 @@ function NavBar(props) {
 
             <div className={cx("list-page")}>
                 <div className={cx("info-user")}>
-                    <img src="eternity/avartar-user.jpg" alt="avartar" />
+                    <img src="/crushie-img/avartar-user.jpg" alt="avartar" />
                     <p>{nameUser ? nameUser : "Vui lòng đăng nhập"}</p>
                 </div>
                 <ul>
@@ -181,7 +181,7 @@ function NavBar(props) {
                         <NavLink to="/sizeChat" className={(nav) => cx("next-page", { active: nav.isActive })}>Size Chart </NavLink>
                     </li>
 
-                    <li>
+                    {/* <li>
                         <div className={cx("page-about")}
 
                         >
@@ -208,7 +208,7 @@ function NavBar(props) {
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li> */}
 
                     <li>
                         <NavLink to="/service" className={(nav) => cx("next-page", { active: nav.isActive })}>Điều khoản và dịch vụ </NavLink>

@@ -24,10 +24,10 @@ function Login({ login, handleLogin }) {
             >
                 <div className={cx("style-grid", "row")}>
 
-                    <div className="col-lg-3 col">
+                    <div className="col-lg-3 col-12">
                         <div className={cx("next-form")}>
                             <div className={cx("logo-brand")}>
-                                <img src="/eternity/banner-4.webp" alt="" />
+                                <img src="/crushie-img/ao-dai.jpeg" alt="login-register" />
                             </div>
 
                             <div className={cx("next-login-reggis")}>
@@ -49,7 +49,7 @@ function Login({ login, handleLogin }) {
 
                     </div>
 
-                    <div className="col-lg-9 col">
+                    <div className="col-lg-9 col-12">
                         <div className={cx("form")}>
                             <p><BsX className={cx("icon-close-login")}
                                 onClick={handleLogin}

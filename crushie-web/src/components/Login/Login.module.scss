@@ -34,9 +34,10 @@
         margin: 0.5rem 0;
         border-right: 1px solid var(--border-color);
         .logo-brand {
+            display: flex;
+            justify-content: center;
             img {
-                width: 100%;
-                height: auto;
+                max-height: 300px;
                 padding: 2rem;
             }
         }
@@ -144,4 +145,15 @@
     .box-login {
         max-width: calc(100% - 100px);
     }
+}
+
+@media (max-width: 576px) {
+    .box-login {
+    .next-form {
+        img{
+            height: 200px;
+        }
+    }
+}
+
 }
